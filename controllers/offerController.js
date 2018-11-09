@@ -8,6 +8,7 @@ module.exports = {
 		Offer.find(req.query)
 			.then(offers => res.json(offers))
 			.catch(err => res.status(422).json(err));
+			
 	},
 	findById: function(req, res) {
 		Offer.findById(req.params.id)
@@ -15,9 +16,10 @@ module.exports = {
 			.catch(err => res.status(422).json(err));
 	},
 	create: function(req, res) {
-		Offer.create(req.body)
+		Offer.create(req.body)		
 			.then(newOffer => res.json(newOffer))
 			.catch(err => res.status(422).json(err));
+			console.log('req.body: ' + req.body.offerAmount);
 	},
 	update: function(req, res) {
 		Offer.findOneAndUpdate({ _id: req.params.id }, req.body)

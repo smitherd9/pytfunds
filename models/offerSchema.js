@@ -2,12 +2,10 @@
 
 // 1.Offer Amount : Currency
 // 2.Years: Integer
-// 3. APR:number
+// 3. APR: number
 // 4.Rate
 // 5.Monthly Payment
 // 6. Term Title
-
-
 
 
 const mongoose = require('mongoose');
@@ -23,7 +21,7 @@ const offerSchema = new Schema({
 		required: true
 	},
 	apr: {
-		type: Number,
+		type: String,
 		required: true
 	},
 	rate: {
@@ -31,7 +29,7 @@ const offerSchema = new Schema({
 		required: true
 	},
 	monthlyPayment: {
-		type: Number,
+		type: String,
 		required: true
 	},
 	termTitle: {
