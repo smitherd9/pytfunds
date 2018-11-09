@@ -29,7 +29,7 @@ postOffer(query);
 
 
    var postOffer = function(query) {
-    var postAddress = 'http://localhost:5000';
+    var postAddress = 'https://obscure-atoll-16356.herokuapp.com';
         $.ajax(postAddress + '/api/offers', {
             type: 'POST',
             data: query,
