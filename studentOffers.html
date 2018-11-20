@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="w-100 h-100">
+  <!--<![endif]-->
+  <head>
+    {% include "analytics" %}
+    {% include "headsettings-avi" %}
+    {% include "metadata" %}
+  </head>
+  <body>
+    {% include "azaleaHeader-avi" %}
+    
+    <div class="f2 bg-pyt-gradient-1 pyt-midnight-blue montserrat flex items-center tl ph4 pv2">
+      <h1 class="pl3 f2 fw2">Student Dashboard</h1>
+		</div>
+      
+		<!-- fully responsive four image card grid for mobile, tablet & desktop with progress pills -->
+		<div class="center flex justify-center center mt3-l mt3-m mb3 mb0-m">
+			<section class="pv3 pb0-m">
+			
+				<!--four image row comes here-->
+				<div class="flex justify-between items-center w-100 ph3">
+					<div class="pa2 ph4-m ph5-l w-100"><img src="icon_profile.png" class="db" /></div>
+					<div class="pa2 ph4-m ph5-l w-100"><img src="icon_score.png" class="db" /></div>
+					<div class="pa2 ph4-m ph5-l w-100"><img src="icon_share.png" class="db" /></div>
+					<div class="pa2 ph4-m ph5-l w-100"><img src="icon_cosigner.png" class="db" /></div>
+				</div>
+				
+				<!-- text row -->
+				<div class="flex justify-between items-center w-100 ph3-ns f9 f8-m f7-l pyt-midnight-blue montserrat fw5 tc">
+					<div class="ph1 w-100-ns">1. Complete Your Profile</div>
+					<div class="ph1 w-100-ns">2. Get Your Score</div>
+					<div class="ph1 w-100-ns">3. Share Your Story</div>
+					<div class="ph1 w-100-ns">4. Review & Accept an Offer</div>
+				</div>
+				
+				<!-- progress pills row -->
+				<div class="flex justify-between items-center w-100 ph2 tc">
+					<span class="db br-pill bg-pyt-pumice w23 h01 center mt2"></span>
+					<span class="db br-pill bg-pyt-pumice w23 h01 center mt2"></span>
+					<span class="db br-pill bg-pyt-pumice w23 h01 center mt2"></span>
+					<span class="db br-pill bg-pyt-midnight-blue w23 h01 center mt2"></span>
+				</div>
+					
+			</section>
+		</div>
+		<!-- END of responsive 4-image, 3-row grid -->
+		 
+		<main class="flex flex-column flex-row-l w-100 justify-center pt4 ph5-l">
+			<!-- PICK THE FUNDING OPTION SECTION -->
+			<section class="flex-l flex-column justify-center items-end">
+				<h3 class="montserrat fw1 f4 w5 tc tl-l center ttu pyt-midnight-blue">
+					Pick the <span class="fw9">funding option</span> best for <span class="fw9">you</span>
+				</h3>
+				
+				<ul class="list pl0 flex flex-column items-center items-start-l w-100-l tc f6">
+				
+					<li class="w-90-l"><a class="tc br-pill bg-pyt-midnight-blue montserrat white link flex items-center justify-center w45 h23 shadow-6 w-100-l" href="#">
+						<div>
+							<div class="db dn-l pb1">Student Loan With</div><div class="db dn-l">Cosigner</div>
+							<div class="dn db-l">Student Loan With Cosigner</div>
+						</div>
+					</a></li>
+					<li class="mv3 w-90-l"><a class="br-pill bg-pyt-pumice montserrat white link flex items-center justify-center w45 h23 shadow-6 w-100-l" href="#">
+						<div>
+							<div class="db dn-l pb1">Student Loan</div><div class="db dn-l">Without Cosigner</div>
+							<div class="dn db-l pb1">Student Loan</div><div class="dn db-l">Without Cosigner</div>
+						</div>
+					</a></li>
+					<li class="w-90-l"><a class="br-pill bg-pyt-shilo montserrat white link flex items-center justify-center w45 h23 shadow-6  w-100-l" href="#">
+						<div>Loanership</div>
+					</a></li>
+					
+				</ul>
+			</section>
+			
+			<!-- RESPONSES AND OFFERS TABLE -->
+			<section class="pl3-l">
+				<h3 class="montserrat f4 fw2 tc tl-l center ma0 pb3">Responses and Offers</h3>
+				
+				<div class="montserrat pb5">
+					<div class="overflow-auto">
+						<table class="f7 fw5 w-100 tc dt--fixed-l cf" cellspacing="0">
+						
+							<thead>
+								<tr class="stripe-dark">
+									<th class="pa3 fw5 bg-pyt-midnight-blue white nowrap bb b--black-0 tl">Institution</th>
+									<th class="pa3 fw5 bg-pyt-midnight-blue white nowrap bb b--black-0 w-10">Offer</th>
+									<th class="pa3 fw5 bg-pyt-midnight-blue white nowrap bb b--black-0 w-10">Years</th>
+									<th class="pa3 fw5 bg-pyt-midnight-blue white nowrap bb b--black-0 w-10">APR</th>
+									<th class="pa3 fw5 bg-pyt-midnight-blue white nowrap bb b--black-0 w-20">Monthly Payment</th>
+									<th class="pa3 fw5 bg-pyt-midnight-blue white nowrap bb b--black-0">Rate</th>
+									<th class="pa3 fw5 bg-pyt-midnight-blue white nowrap bb b--black-0">Accepted</th>
+								</tr>
+							</thead>
+							
+							<tbody class="">
+							
+								<tr class="" id="trigger-button">
+									<td class="pa3 bb b--black-20 tl">Arvest Bank</td>
+									<td class="pa3 bb b--black-20">$1,000</td>
+									<td class="pa3 bb b--black-20">5</td>
+									<td class="pa3 bb b--black-20">2%</td>
+									<td class="pa3 bb b--black-20">$50</td>
+									<td class="pa3 bb b--black-20">Fixed</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+								</tr>
+								
+								<tr class="">
+									<td class="pa3 bb b--black-20 tl">Chase</td>
+									<td class="pa3 bb b--black-20">$2,500</td>
+									<td class="pa3 bb b--black-20">3</td>
+									<td class="pa3 bb b--black-20">1%</td>
+									<td class="pa3 bb b--black-20">$75</td>
+									<td class="pa3 bb b--black-20">Variable</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+								</tr>
+								
+								<tr class="">
+									<td class="pa3 bb b--black-20 tl">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+								</tr>
+								
+								<tr class="">
+									<td class="pa3 bb b--black-20 tl">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+								</tr>
+								
+								<tr class="">
+									<td class="pa3 bb b--black-20 tl">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+								</tr>
+								
+								<tr class="">
+									<td class="pa3 bb b--black-20 tl">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+								</tr>
+								
+								<tr class="">
+									<td class="pa3 bb b--black-20 tl">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+								</tr>
+								
+								<tr class="">
+									<td class="pa3 bb b--black-20 tl">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+								</tr>
+								
+								<tr class="">
+									<td class="pa3 bb b--black-20 tl">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+									<td class="pa3 bb b--black-20">&nbsp;</td>
+								</tr>
+								
+								<!--<tr class="stripe-dark">
+									<td class="pa3"></td>
+									<td class="pa3"></td>
+									<td class="pa3"></td>
+									<td class="pa3"></td>
+									<td class="pa3"></td>
+									<td class="pa3"></td>
+								</tr>-->
+								
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+
+		</main>
+    
+    <dialog class="absolute fixed top-0 left-0 bn w-90 w-100-ns pa0 br4 measure shadow-2 montserrat" id="modal" role="dialog" aria-labelledby="dialog1Title" aria-describedby="dialog1Desc">
+			<section class="">
+				<header class="bg-pyt-white-smoke flex justify-between pa3 br4 br--top">
+					<h3 class="dib f3 ma0 lh-title mt2 pyt-midnight-blue" id="dialog1Title">**Arvest Bank</h3>
+					<button class="bg-transparent pyt-midnight-blue br-pill bn f2" id="close" type="button">×</button>
+				</header>
+				<div class="pa3 f5">
+
+					<form>
+					<p id="dialog1Desc" class="dn">Offer info breakdown:</p>
+					<div class="w-100 flex flex-wrap tc justify-center montserrat">
+						<div class="w-50 w-third-ns pb4">
+							<div class="oswald b pb3 pyt-schist">Offer Amount</div>
+							<div class="f4 fw5 pyt-midnight-blue"><input type="text" name="offerAmount" id="offerAmount"></div>
+						</div>
+						<div class="w-50 w-third-ns pb4">
+							<div class="oswald b pb3 pyt-schist">Years</div>
+							<div class="f4 fw5 pyt-midnight-blue"><input type="text" name="years" id="years"></div>
+						</div>
+						<div class="w-50 w-third-ns pb4">
+							<div class="oswald b pb3 pyt-schist">APR</div>
+							<div class="f4 fw5 pyt-midnight-blue"><input type="text" name="apr" id="apr"></div>
+						</div>
+
+						<div class="w-50 w-third-ns pb4">
+							<div class="oswald b pb3 pyt-schist">Rate</div>
+							<div class="f4 fw5 pyt-midnight-blue"><input type="text" name="rate" id="rate"></div>
+						</div>
+						<div class="w-50 w-third-ns pb4">
+							<div class="oswald b pb3 pyt-schist">Monthly Payment</div>
+							<div class="f4 fw5 pyt-midnight-blue"><input type="text" name="monthlyPayment" id="monthlyPayment"></div>
+						</div>
+						<div class="w-50 w-third-ns pb4">
+							<div class="oswald b pb3 pyt-schist">Term Title</div>
+							<div class="f4 fw5 pyt-midnight-blue"><input type="text" name="termTitle" id="termTitle"></div>
+						</div>
+					</div>
+					</form>
+				</div>
+				<footer class="flex justify-around bg-transparent">
+					<button class="w4 w45-ns bn br-pill white h2 h23-ns shift-down shadow-6 bg-pyt-shilo" id="decline" type="button">Decline</button>
+					<button class="w4 w45-ns bn bg-pyt-midnight-blue white br-pill h2 h23-ns shift-down shadow-6" id="accept" type="button">Accept</button>
+				</footer>
+			</section>
+		</dialog>
+    
+    {% include "azaleaFooter-avi" %}
+    {% include "bodysettings-avi" %}
+    
+    <script>
+			var modal = document.querySelector("#modal");
+			var triggerButton = document.querySelector("#trigger-button");
+			var closeButton = document.querySelector("#close");
+			var open = false; //todo: change back to false
+			
+			triggerButton.addEventListener("click", function() {
+				if(open) {
+					open = false;
+				} else {
+					modal.showModal();
+					open = true;
+				}
+			});
+			
+			closeButton.addEventListener("click", function() {
+				modal.close();
+				open = false;
+			});
+			
+			//modal.showModal(); //todo: remove/comment out ths line
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>

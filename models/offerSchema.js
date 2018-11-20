@@ -17,7 +17,7 @@ const offerSchema = new Schema({
 		required: true
 	},
 	years: {
-		type: Number,
+		type: String,
 		required: true
 	},
 	apr: {
@@ -25,7 +25,7 @@ const offerSchema = new Schema({
 		required: true
 	},
 	rate: {
-		type: Number,
+		type: String,
 		required: true
 	},
 	monthlyPayment: {
