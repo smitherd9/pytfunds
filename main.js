@@ -1,31 +1,21 @@
 $(document).ready(function() {
 
-    $('#submit').on('click', function(e) {        
-            e.preventDefault();
-            sendData();
-        
-    });
+  $('#fund').on('click', function(e) {        
+    e.preventDefault();
+    
+        var query = {};
+    
+    query.nbid = $('#nbid').val();
+    query.offerAmount  = $('#offerAmount').val();
+    query.years = $('#years').val();
+    query.apr = $('#apr').val();
+    query.rate  = $('#rate').val();
+    query.monthlyPayment  = $('#monthlyPayment').val();
+    query.termTitle = $('#termTitle').val();
+    query.nationId = $('#nbid').val(); 
+    postOffer(query);
 
-var sendData = function() {
-	var query = {};
-
-	var offerAmount = $('#offerAmount').val();
-	var years = $('#years').val();
-	var apr = $('#apr').val();
-	var rate = $('#rate').val();
-	var monthlyPayment = $('#monthlyPayment').val();
-	var termTitle = $('#termTitle').val();
-
-query.offerAmount = offerAmount;
-query.years = years;
-query.apr = apr;
-query.rate = rate;
-query.monthlyPayment = monthlyPayment;
-query.termTitle = termTitle;
-
-postOffer(query);
-
-}
+  });
 
 
    var postOffer = function(query) {
