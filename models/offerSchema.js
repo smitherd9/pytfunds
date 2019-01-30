@@ -12,6 +12,11 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const offerSchema = new Schema({
+	nbid: {
+		type: String,
+		required: true
+	},
+
 	offerAmount: {
 		type: String,
 		required: true
